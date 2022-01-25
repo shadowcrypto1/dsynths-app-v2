@@ -2,7 +2,7 @@ module.exports = {
   exportPathMap: async function () {
     return {
       '/trade': {
-        page: '/trade/[contract]',
+        page: '/trade/:contract',
       },
     }
   },
@@ -10,7 +10,7 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: '/trade[contract]',
+        destination: '/trade',
         permanent: true,
       },
     ]
