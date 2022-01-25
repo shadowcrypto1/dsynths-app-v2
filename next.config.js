@@ -23,7 +23,7 @@ module.exports = {
   exportPathMap: async function () {
     return {
       '/trade/:contract': {
-        page: '/trade/[contract]',
+        page: '/trade/:contract',
       },
     }
   },
