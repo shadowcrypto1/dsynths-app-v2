@@ -8,4 +8,16 @@ module.exports = {
       },
     ]
   },
+  async rewrites() {
+    return [
+      {
+        source: '/trade',
+        destination: '/trade',
+      },
+      {
+        source: '/trade/:contract',
+        destination: '/trade/:contract',
+      },
+    ]
+  },
 }
